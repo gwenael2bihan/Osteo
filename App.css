@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  background: #1f2235;
+  z-index: 3;
+}
+
+.navbar__container {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar Left */
+.navbar__left-logo {
+  display: flex;
+}
+
+.prenom {
+  font-size: 20px;
+  font-weight: 700;
+  color: #DEB887;
+
+}
+
+.nom {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.line {
+  display: inline;
+  margin: -10px 0;  
+}
+/* Navbar Left */
+
+/* Navbar Right */
+
+.navbar__right {
+  display: flex;
+  list-style-type: none;
+}
+
+ a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+
+}
+
+.active {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.navbar__right a:hover {
+  color: #DEB887;
+}
+/* Navbar Right */
+
+.content {
+  padding: 20%;
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .navbar__right {
+    right: 0%;
+    margin-top: 355px;
+    border: solid 3px #DEB887;
+    border-top: none;
+    width: 40%;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    background: #1f2235;
+  }
+  
+  .navbar__right li a {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .toggle {
+    display: flex;
+    color: white;
+  }
+}
